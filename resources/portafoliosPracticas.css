@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    transition: background 0.3s, color 0.3s;
+}
+
+.cabezera{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    background:lightgreen;
+    flex-wrap:wrap;
+}
+
+.menu{
+    display:flex;
+    gap:15px;
+}
+
+.menu a{
+    font-weight:bold;
+    color:black;
+}
+
+#cambioTema{
+    padding:8px;
+    cursor:pointer;
+}
+
+.nuevaSeccion{
+    background:aquamarine;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+
+#sobreMi{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+#sobreMi img{
+    width:150px;
+    border-radius:50%;
+}
+
+.proyectos-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:20px;
+}
+
+.proyecto{
+    flex:1 1 250px;
+    background:lightskyblue;
+    padding:15px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:lightgreen;
+}
+
+.redes{
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.dark{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark .card{
+    background:#333;
+}
+
+.dark footer{
+    background:#222;
+}
+
+@media(max-width:768px){
+    #sobreMi{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .menu{
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
+}
