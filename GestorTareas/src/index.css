@@ -1,0 +1,90 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Coloress */
+  --bg: black;
+  --bg-2: black;
+  --bg-3: black;
+  --bg-card: black;
+  --border: darkslateGray;
+  --border-hover: SlateGray;
+
+  --text-primary: white;
+  --text-secondary: lavender;
+  --text-muted: Thistle;
+
+  --accent: mediumorchid;
+  --accent-dim: rgba(124, 106, 247, 0.15);
+  --accent-hover: plum;
+
+  /* Colores para la prioridad */
+  --priority-high: crimson;
+  --priority-high-bg: rgba(244, 80, 74, 0.12);
+  --priority-med: orange;
+  --priority-med-bg: rgba(240, 160, 48, 0.12);
+  --priority-low: lightgreen;
+  --priority-low-bg: rgba(62, 207, 142, 0.12);
+
+  /* Colores para tareas pendientes */
+  --status-pending: red;
+  --status-progress: purple;
+  --status-done: lightgreen;
+
+/* Espaciado */
+  --gap-xs: 4px;
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+  --gap-xl: 40px;
+
+/* Radios */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+/* Transiciones */
+  --transition: 0.18s ease;
+  --transition-slow: 0.3s ease;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Uso para el scroll */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
